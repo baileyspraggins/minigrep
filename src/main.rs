@@ -9,8 +9,8 @@ fn main() {
         process::exit(1);
     });
 
-    println!("Searching for {}", &config.query);
-    println!("In file {}", &config.filename);
+    // println!("Searching for {}", &config.query);
+    // println!("In file {}", &config.filename);
 
     // Use an if let funciton when running the config because we dont need to return a () value.
     if let Err(e) = minigrep::run(config) {
